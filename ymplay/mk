@@ -1,0 +1,11 @@
+rm ymplay
+rm *.o
+rm libym.so
+gcc sound.c -c -o sound.o
+gcc ymcore.c -c -o ymcore.o
+gcc ay8910.c -c -o ay8910.o
+gcc sound.o ymcore.o ay8910.o -shared -o libym.so
+cp libym.so /usr/local/lib
+cp entete.h /usr/local/include
+#gcc ymplay.c -lSDL -lpthread -lym -o ymplay
+gcc ymplay.c -lym -o ymplay

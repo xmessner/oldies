@@ -1,0 +1,1 @@
+gcc nebula.c -o nebula -lGFX -lSDL -lpthread -lSDL_gfx -lgui_parse

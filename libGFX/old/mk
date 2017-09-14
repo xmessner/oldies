@@ -1,0 +1,2 @@
+#gcc $1.c -o $1.exe -lSDL -lpthread
+gcc test.c fileio.c primitives.c effets.c -o test.exe -lSDL -lpthread
